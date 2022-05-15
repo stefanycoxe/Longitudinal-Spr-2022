@@ -91,76 +91,6 @@ pre code {
 </style>
 
 
-<style type="text/css">
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script type="text/javascript">
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
-  }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
-});
-</script>
 
 <!-- tabsets -->
 
@@ -233,27 +163,6 @@ $(document).ready(function () {
 
 
 
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Longitudinal (PSY 5939) - Spring 2022</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
-
 <div id="header">
 
 
@@ -264,87 +173,98 @@ $(document).ready(function () {
 
 
 <p><img src="long2022.png" style="width:20.0%" /></p>
+<p><a href="Longitudinal-syllabus-Spring-2022.html">Syllabus</a></p>
 <table>
 <colgroup>
-<col width="16%" />
-<col width="41%" />
-<col width="41%" />
+<col width="11%" />
+<col width="28%" />
+<col width="28%" />
+<col width="31%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th align="left">Week</th>
+<th align="left">Topic</th>
 <th align="left">HTML slides</th>
 <th align="left">PDF handout</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">0</td>
-<td align="left"><a href="Long2022-0.html">Long2022-0.html</a></td>
-<td align="left"><a href="Long2022-0.pdf">Long2022-0.pdf</a></td>
-</tr>
-<tr class="even">
 <td align="left">1</td>
+<td align="left">Introduction</td>
 <td align="left"><a href="Long2022-1.html">Long2022-1.html</a></td>
 <td align="left"><a href="Long2022-1.pdf">Long2022-1.pdf</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">2</td>
+<td align="left">Models for two waves</td>
 <td align="left"><a href="Long2022-2.html">Long2022-2.html</a></td>
 <td align="left"><a href="Long2022-2.pdf">Long2022-2.pdf</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">3</td>
+<td align="left">Mixed models (G)</td>
 <td align="left"><a href="Long2022-3.html">Long2022-3.html</a></td>
 <td align="left"><a href="Long2022-3.pdf">Long2022-3.pdf</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">4</td>
+<td align="left">Mixed models (G)</td>
 <td align="left"><a href="Long2022-4.html">Long2022-4.html</a></td>
 <td align="left"><a href="Long2022-4.pdf">Long2022-4.pdf</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">5</td>
+<td align="left">Mixed models (G)</td>
 <td align="left"><a href="Long2022-5.html">Long2022-5.html</a></td>
 <td align="left"><a href="Long2022-5.pdf">Long2022-5.pdf</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">6</td>
+<td align="left">Mplus</td>
 <td align="left"><a href="Long2022-6.html">Long2022-6.html</a></td>
 <td align="left"><a href="Long2022-6.pdf">Long2022-6.pdf</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">7</td>
+<td align="left">Latent growth models</td>
 <td align="left"><a href="Long2022-7.html">Long2022-7.html</a></td>
 <td align="left"><a href="Long2022-7.pdf">Long2022-7.pdf</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">8</td>
+<td align="left">Latent growth models</td>
 <td align="left"><a href="Long2022-8.html">Long2022-8.html</a></td>
 <td align="left"><a href="Long2022-8.pdf">Long2022-8.pdf</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">9</td>
+<td align="left">Latent growth models</td>
 <td align="left"><a href="Long2022-9.html">Long2022-9.html</a></td>
 <td align="left"><a href="Long2022-9.pdf">Long2022-9.pdf</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">10</td>
+<td align="left">Mediation</td>
 <td align="left"><a href="Long2022-10.html">Long2022-10.html</a></td>
 <td align="left"><a href="Long2022-10.pdf">Long2022-10.pdf</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">11</td>
+<td align="left">Mediation</td>
 <td align="left"><a href="Long2022-11.html">Long2022-11.html</a></td>
 <td align="left"><a href="Long2022-11.pdf">Long2022-11.pdf</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">12</td>
+<td align="left">Growth mixture models</td>
 <td align="left"><a href="Long2022-12.html">Long2022-12.html</a></td>
 <td align="left"><a href="Long2022-12.pdf">Long2022-12.pdf</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">13</td>
+<td align="left">Mixed models (R)</td>
 <td align="left"><a href="Long2022-13.html">Long2022-13.html</a></td>
 <td align="left"><a href="Long2022-13.pdf">Long2022-13.pdf</a></td>
 </tr>
